@@ -59,7 +59,11 @@ const Buy = ({ state }) => {
         className="form-control"
         value={amount}
         onChange={handleAmountChange}
+<<<<<<< HEAD
         placeholder="Enter Amount To Donate(only Sepolia)"
+=======
+        placeholder="Enter Amount To Donate (Only Sepolia)"
+>>>>>>> 4a4b814ceeb0461675caef12b7f9d84fc68dd8d9
         style={{ width: "40%", alignContent:"center", marginTop:"2%" }} // Adjust the width as needed
       />
     </div>
