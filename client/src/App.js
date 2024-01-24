@@ -21,7 +21,7 @@ function App() {
   const [account, setAccount] = useState("None");
   useEffect(() => {
     const connectWallet = async () => {
-      const contractAddress = "0xC938DF54c2138ADc73fd841Dd4EA7eAe36Ce9823";
+      const contractAddress = "0x0D71e1F601aA9403d4b2f766Ef0c537647eA55d2";
       const contractABI = abi.abi;
       try {
         const { ethereum } = window;
@@ -77,15 +77,22 @@ function App() {
   
   
   return (
-    <div style={{ backgroundColor: "#F7F7F7", height: "100%", textAlign: "center" }}>
+    <div style={{ backgroundColor: "#F7F7F7", height: "100%", textAlign:"center" }}>
 
-      {/* Text message */}
-      <p style={{ fontSize: "90%",   fontWeight: "bold", color: "#333", margin: "" }}>
-      Hello, this is Rishabh Shukla. 
-      During our(me and my friends) trip to Manali on December 29, 2023, the car we rented got damaged. After celebrating New Year in Kasol, my car accidentally hit a rock, causing an oil leak. We spent the night in the car, towed it for repairs the next day, and paid 6100 Rs for fixing it. Now, the owner refuses to return our 10,000 Rs security deposit and demands more money, although the car is working fine. As a student, I am financially strained and seeking help to cover these unexpected costs. Any donations would be appreciated. Thank you!      </p>
+<div style={{ textAlign: "center" }}>
+  <p style={{ 
+    fontSize: "95%", 
+    fontWeight: "bold", 
+    color: "#333", 
+    display: "inline-block", 
+    maxWidth: "80%" 
+  }}>
+    Hello, this is Rishabh Shukla. During our (me and my friends) trip to Manali on December 29, 2023, the car we rented got damaged. After celebrating New Year in Kasol, my car accidentally hit a rock, causing an oil leak. We spent the night in the car, towed it for repairs the next day, and paid 6100 Rs for fixing it. Now, the owner refuses to return our 10,000 Rs security deposit and demands more money, although the car is working fine. As a student, I am financially strained and seeking help to cover these unexpected costs. Any donations would be appreciated. Thank you!
+  </p>
+</div>
 
       {/* Image container with fixed height */}
-      <div style={{ backgroundColor: "", height: "400px", overflow: "hidden", marginBottom: "20px", position: "relative" }}>
+      <div style={{ height: "400px", overflow: "hidden", marginBottom: "20px", position: "relative" }}>
         <img
           src={imageArray[currentImage]}
           className="img-fluid"

@@ -30,7 +30,7 @@ const Buy = ({ state }) => {
 
   return (
     <>
-      <div className="container-md" style={{ width: "50%", margin: "auto" }}>
+      <div className="container-md" style={{  width: "50%", margin: "auto" }}>
   <p style={{ fontSize: "100%", fontWeight: "bold", color: "#333" }}>
     Input details
   </p>
@@ -41,7 +41,7 @@ const Buy = ({ state }) => {
         className="form-control"
         id="name"
         placeholder="Enter Your Name"
-        style={{ width: "60%", marginLeft:"20%" }} // Adjust the width as needed
+        style={{ width: "40%", alignContent:"center", marginTop:"2%" }} // Adjust the width as needed
       />
     </div>
     <div className="mb-3">
@@ -50,7 +50,7 @@ const Buy = ({ state }) => {
         className="form-control"
         id="message"
         placeholder="Enter Your Message"
-        style={{ width: "60%", marginLeft:"20%" }} // Adjust the width as needed
+        style={{ width: "40%", alignContent:"center", marginTop:"2%" }} // Adjust the width as needed
       />
     </div>
     <div className="mb-3">
@@ -60,25 +60,27 @@ const Buy = ({ state }) => {
         value={amount}
         onChange={handleAmountChange}
         placeholder="Enter Amount To Donate"
-        style={{ width: "60%", marginLeft:"20%" }} // Adjust the width as needed
+        style={{ width: "40%", alignContent:"center", marginTop:"2%" }} // Adjust the width as needed
       />
     </div>
     <button
   type="submit"
   className="btn btn-primary"
-  style={{ marginLeft: "-50%" }}
+  style={{ 
+    marginTop: "10px", 
+    marginLeft:"-34%", 
+    backgroundColor:"#96D4D4",
+    fontSize: "16px" // Adjust the font size as needed
+  }}
   disabled={!state.contract}
   onMouseOver={() => {
     if (!state.contract) {
       alert("Please install Metamask. Create an account and add some funds in that account. For testing you can add faucet tokens.");
     }
   }}
- 
 >
   Pay
 </button>
-
-
   </form>
 </div>
 
